@@ -1,0 +1,22 @@
+{
+  "name": "mac-glitch-hunter",
+  "owner": {
+    "name": "xmwa"
+  },
+  "metadata": {
+    "description": "Read-only diagnosis of macOS hangs and stuck system services",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "mac-glitch-hunter",
+      "description": "Find why a Mac app hangs or won't open: scans crash and hang reports, samples system daemons for blocked threads and XPC pile-ups, and follows the chain of waiting processes to the stuck one. Read-only; never restarts anything without asking.",
+      "source": "./",
+      "strict": false,
+      "version": "0.1.0",
+      "skills": [
+        "./skills/mac-glitch-hunter"
+      ]
+    }
+  ]
+}
