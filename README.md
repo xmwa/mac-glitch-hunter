@@ -36,7 +36,36 @@ As a Claude Code plugin:
 
 Or copy `skills/mac-glitch-hunter` into `~/.claude/skills/`.
 
-Then ask your agent something like "Messages won't open, find out why" or "scan my Mac for glitches".
+## Example prompts
+
+Once it's installed, just describe the problem to your agent. Some prompts that trigger it:
+
+**An app hangs or won't open**
+- "Messages won't open. The icon bounces and then it disappears. Find out why."
+- "Mail beachballs every time I click on a folder. What is it waiting on?"
+- "System Settings freezes when I open the Passwords pane."
+- "Xcode hangs on launch since yesterday. Check the crash reports."
+
+**Several things act up at once**
+- "Safari sometimes can't load sites until I quit and reopen it, and iMessage is acting weird too. Are these related?"
+- "iCloud sign-in prompts keep stalling and FaceTime won't connect. Find the common cause."
+- "Spotlight, Mail and Contacts all feel sluggish today. Is one service stuck?"
+
+**Checkups**
+- "Scan my Mac for glitches."
+- "Run a health check and tell me anything that looks off."
+- "Check whether any system services are stuck right now."
+- "Look at the last week of crash reports. Is anything crashing repeatedly?"
+
+**While it's happening**
+- "Notes is frozen right now, pid 4182. Sample it and follow the chain."
+- "Something is hung in the menu bar. Find which process it is and why."
+
+**After a fix**
+- "I restarted ctkd like you suggested. Verify the pile-up is gone."
+- "Messages opens again. Re-run the scan and confirm nothing else is blocked."
+
+The agent scans and explains first. It only proposes a restart once it has found the stuck process, and it waits for your OK before running anything.
 
 ## Run the scanner directly
 
